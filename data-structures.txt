@@ -1,0 +1,19 @@
+This file contains helpful notes on data structures.
+
+# Arrays and linked lists
+
+Arrays and linked lists both store multiple items.
+
+Arrays store all items contiguously (right next to each other) in memory. When a
+new item is added and the next memory slot isn’t free, all items may need to be
+moved to a new location in memory to make room.
+
+In a linked list, each item stores a reference (or pointer) to the next item. The
+items can be located anywhere in memory, avoiding the need for a large block of
+consecutive memory or moving existing items.
+
+The downside of linked lists is that you can't access an item directly—you have
+to start at the beginning and follow the links one by one until you reach it.
+This makes linked lists great for reading items sequentially, but terrible for
+random access. Arrays, on the other hand, are ideal for accessing elements at
+arbitrary positions since you can jump straight to any index.
