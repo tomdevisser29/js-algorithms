@@ -1,19 +1,30 @@
 This file contains helpful notes on data structures.
 
-# Arrays and linked lists
+# Data structures
 
-Arrays and linked lists both store multiple items.
+## Arrays
 
 Arrays store all items contiguously (right next to each other) in memory. When a
 new item is added and the next memory slot isn’t free, all items may need to be
 moved to a new location in memory to make room.
 
+## Linked lists
+
 In a linked list, each item stores a reference (or pointer) to the next item. The
 items can be located anywhere in memory, avoiding the need for a large block of
 consecutive memory or moving existing items.
+
+## Arrays versus linked lists
 
 The downside of linked lists is that you can't access an item directly—you have
 to start at the beginning and follow the links one by one until you reach it
 (sequential access). This makes linked lists great for reading items sequentially,
 but terrible for random access. Arrays, on the other hand, are ideal for accessing
 elements at arbitrary positions since you can jump straight to any index.
+
+## Stacks
+
+Stacks are very simple data structures, often used for call stacks. You can only
+delete items from, or add items to, the top of the stack. Every function  in a
+call stack takes up some memory, so beware for stacks that get too tall. You can
+refactor it to use a loop, or use tail recursion instead.

@@ -1,0 +1,6 @@
+# Recursion
+
+Recursion is when a function calls itself. Every recursive function has two
+parts: a base case, which stops the recursion, and a recursive case, which
+continues it. Each function call is added to the call stack. If the base case is
+missing or the stack gets too deep, you get a stack overflow.
