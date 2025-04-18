@@ -4,13 +4,9 @@
  * adding that to the resulting array.
  */
 function recursiveSum(array) {
-    if (array.length == 0) {
-        return 0;
-    }
+    if (array.length == 0) return 0;
 
-    return array.length == 1
-        ? array[0]
-        : array.pop() + recursiveSum(array);
+    return array.pop() + recursiveSum(array);
 }
 
 console.log(recursiveSum([2, 3, 4]));
@@ -35,15 +31,10 @@ console.log(recursiveLength([1, 2, 3, 4, 5]));
  * function.
  */
 function recursiveFindMax(array) {
-    if (array.length === 0) {
-        return 0;
-    }
+    if (array.length === 0) return 0;
+    if (array.length === 1) return array[0];
 
-    if (array.length === 1) {
-        return array[0];
-    }
-
-    return Math.max(array.pop(), findMax(array));
+    return Math.max(array.pop(), recursiveFindMax(array));
 }
 
 console.log(recursiveFindMax([5, 2, 8, 4, 10]));
