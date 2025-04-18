@@ -1,0 +1,9 @@
+# Divide and conquer (D&C)
+
+Divide and conquer is a well-known recursive technique for solving problems.
+
+## Steps to follow
+
+To solve a problem using divide and conquer, there are two steps:
+1. Figure out the base case, this should be the simplest possible case;
+2. Divide or decrease your problem until it becomes the base case.
