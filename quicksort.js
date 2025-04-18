@@ -6,6 +6,7 @@
 function quicksort(array) {
     if (array.length < 2) return array;
 
+    // By picking a random pivot point, the average runtime is O(n log n).
     const pivot = array[Math.floor(Math.random() * array.length)];
     const less = array.slice(1).filter(i => i <= pivot);
     const greater = array.slice(1).filter(i => i > pivot);
