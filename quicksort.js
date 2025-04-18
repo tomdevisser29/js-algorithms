@@ -6,7 +6,7 @@
 function quicksort(array) {
     if (array.length < 2) return array;
 
-    const pivot = array[0];
+    const pivot = array[Math.floor(Math.random() * array.length)];
     const less = array.slice(1).filter(i => i <= pivot);
     const greater = array.slice(1).filter(i => i > pivot);
 
