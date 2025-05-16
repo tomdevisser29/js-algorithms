@@ -62,6 +62,21 @@ to data on the webpage), or DNS tables.
 A graph models a set of connections. Graphs are made up of nodes and edges. A
 node can be directly connected to many other nodes, called its neighbours.
 
+To implement graphs, you need relationships between nodes, which can be expressed
+using hash tables. In a directed graph the relationships are one way, the opposite
+is an undirected graph in which both nodes are always each others neighbours. The
+connections are called edges.
+
+Following all edges has a runtime of O(number of edges). Adding a node to the queue is
+O(1) per node, so O(number of nodes) in total. Added together this gives O(V + E), where
+V is the number of nodes/vertices, and E the number of edges.
+
+To sort a graph, you can use topological sort. It's a way to make an ordered list out of
+a graph.
+
+A tree is a special kind of graph where no edges ever point back. A well-known example is
+a family tree.
+
 ## Queue
 
 Queues are similar to stacks. You can't access random elements, only enqueue and
