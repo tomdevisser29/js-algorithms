@@ -56,3 +56,8 @@ Hash tables are great when you want to create a mapping from one thing to
 another thing, when you often have to look things up and when you need to
 prevent duplicate entries. Examples are phone books, caching (e.g. mapping a URL
 to data on the webpage), or DNS tables.
+
+## Graphs
+
+A graph models a set of connections. Graphs are made up of nodes and edges. A
+node can be directly connected to many other nodes, called its neighbours.
