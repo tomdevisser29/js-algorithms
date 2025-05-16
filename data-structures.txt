@@ -28,3 +28,31 @@ Stacks are very simple data structures, often used for call stacks. You can only
 delete items from, or add items to, the top of the stack. Every function  in a
 call stack takes up some memory, so beware for stacks that get too tall. You can
 refactor it to use a loop, or use tail recursion instead.
+
+## Hash functions and hash tables
+
+### Hash functions
+
+A hash function is a function where you put in a string (or other type of data)
+and you get back a number. It maps strings to numbers. There are two
+requirements:
+1. It needs to be consistent—every time you put in the same data, you should get
+the same number;
+2. It should map different data to different numbers.
+
+The number returned can be used as the index to store, and later retrieve, that
+data in an array.
+
+### Hash tables
+
+Putting hash functions together with arrays creates a data structure called a
+hash table. They're smarter than arrays or lists, because they store some extra
+logic. This makes them one of the most useful complex data structures.
+
+Examples of hash tables in languages are dictionaries in Python, or associative
+arrays in PHP.
+
+Hash tables are great when you want to create a mapping from one thing to
+another thing, when you often have to look things up and when you need to
+prevent duplicate entries. Examples are phone books, caching (e.g. mapping a URL
+to data on the webpage), or DNS tables.
