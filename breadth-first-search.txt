@@ -1,0 +1,16 @@
+# Breadth-first search
+
+A search algorithm that runs on graphs. It helps answer two kinds of questions:
+
+1. Is there a path between two nodes?
+2. What is the shortest path between two nodes?
+
+## Steps
+
+1. You search all the nodes directly connected to the first;
+2. For every node that doesn't meet the requirement, add its neighbours to the
+   list;
+
+This way you search the entire network of nodes until you find one that meets
+the requirement, as long as you search the list in the order in which nodes are
+added. The data structure for this is a queue.

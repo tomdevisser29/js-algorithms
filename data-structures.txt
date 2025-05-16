@@ -61,3 +61,9 @@ to data on the webpage), or DNS tables.
 
 A graph models a set of connections. Graphs are made up of nodes and edges. A
 node can be directly connected to many other nodes, called its neighbours.
+
+## Queue
+
+Queues are similar to stacks. You can't access random elements, only enqueue and
+dequeue. The queue is called a FIFO data structure; first in, first out. In
+contrast, a stack is LIFO; last in, first out.
